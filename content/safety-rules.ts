@@ -1,0 +1,14 @@
+export const safetyRules = [
+  { zh: "禁止在宁波诺丁汉大学所有的楼内吸烟，除非是在指定的吸烟区。", en: "Smoking inside all buildings is forbidden except in the designated smoking area." },
+  { zh: "请在指定区域活动，未在学校员工的陪同下禁止进出非经许可或者限制区域，例如实验室。", en: "Please visit only your assigned area and not access to any authorized area without the accompany of university staff, e.g. the laboratory." },
+  { zh: "请听从员工的安全建议或意见。", en: "Please follow all the other safety instruction of the University staff." },
+  { zh: "如发现安全问题，请拨打电话 88180111。如有任何身体不适，请拨打电话 88180120。", en: "If there is a problem regarding safety and security, please dial 88180111; If you have any medical problem, please dial 88180120." },
+  { zh: "请访客自行保管随身物品。学校不为物品丢失承担责任。", en: "Visitors should be responsible for your own belongings. Any personal property loss will not the responsibility of the University." },
+  { zh: "如遇紧急状况或火灾，请选择最近的逃生路线离开大楼。不要使用电梯。请按照指示在指定的紧急集合点集合点名。", en: "In case of an emergency or fire alarm, you must immediately leave the building through the nearest evacuation route. Do not use the elevator. Report to the assembly points for head count as directed." },
+  { zh: "开车或者骑车时请注意路上其他行人，注意校园内交通标识和限速规定：机动车 20km/h，电瓶车 15km/h。所有车辆只能停放在指定区域。", en: "Driving or cycling with due attention for other road users, observe the traffic signs and speed limit: 20km/h for motor vehicles and 15km/h for ebikes. All vehicles only park in the designated zones." },
+  { zh: "如果带着孩子访问学校，请照看好自己的小孩。", en: "Please take care of your children when you visit the campus and accompany and supervise him/her always." },
+  { zh: "请注意滑倒、绊倒或摔倒的风险，尤其是在雨天。", en: "Please pay attention to the slip/trip/fall hazards especially during rainy days." },
+  { zh: "请勿戏水，远离校内河流。", en: "Do not play with the river and keep away from the campus water environment." },
+  { zh: "所有访客在校访问期间应遵守学校相关政策。不可滥用网络设施、泄露保密信息或对限制区域摄影摄像；不得在未经学校允许的情况下将含学校背景的影视内容用于广告、宣传或业务拓展。违反政策者将被送离学校，必要时报警或起诉。", en: "University policies and procedures should temporarily cover all visitors while they are at UNNC. You must not misuse internet connection, disclose confidential information or take photographs of restricted areas. Visitor will be escorted or referred to the Police (if necessary) or face prosecution if appropriate for any non-compliance with UNNC policies and procedures." },
+  { zh: "所有访客在校访问期间应遵守中国法律法规。禁止携带易燃、易爆、有毒、管制刀具等危险品进入校园；禁止盗窃、损坏校园财物；禁止在校园内宣传或开展宗教活动等。若涉及违法犯罪，学校将制止并移交公安机关处理。", en: "All visitors are required to comply with Chinese laws and regulations while they are at UNNC. Do not bring flammable, explosive, toxic substances, controlled knives, or other dangerous items onto campus. Do not theft or damage any campus property. No organization or individual shall promote or conduct religious activities on campus. Visitors will be required to cease activity and referred to the Police in the event of any violation of Chinese laws and regulations." },
+];

@@ -1,0 +1,6 @@
+import { ArrowUpRight, Megaphone } from "lucide-react";
+import type { Announcement } from "@/lib/announcements";
+
+export function AnnouncementBoard({ announcements }: { announcements: Announcement[] }) {
+  return <section className="announcement-board" aria-labelledby="announcements-title"><div className="announcement-heading"><div><span className="eyebrow"><Megaphone size={15} /> CAMPUS UPDATES</span><h2 id="announcements-title">最新公告</h2></div><span className="announcement-count">{String(announcements.length).padStart(2, "0")}</span></div><div className="announcement-list">{announcements.map((item, index) => <article className={`announcement-item level-${item.level}`} key={item.id}><div className="announcement-meta"><span>{item.is_pinned ? "置顶" : item.level === "emergency" ? "紧急" : item.level === "important" ? "重要" : "通知"}</span>{index === 0 && <em>NEW</em>}<time>{new Intl.DateTimeFormat("zh-CN", { month: "2-digit", day: "2-digit" }).format(new Date(item.publish_at))}</time></div><h3>{item.title}</h3><p>{item.summary}</p>{item.link_url && <a href={item.link_url} target="_blank" rel="noopener noreferrer">查看详情 <ArrowUpRight size={15} /></a>}{item.is_demo && <small className="demo-label">DEMO · 非学校真实通知</small>}</article>)}</div></section>;
+}

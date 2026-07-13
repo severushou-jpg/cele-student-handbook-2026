@@ -1,0 +1,8 @@
+import { ExternalLink, Mail, MapPin, Phone } from "lucide-react";
+import { contacts, phoneHref } from "@/content/contacts";
+
+function ContactCard({ item }: { item: (typeof contacts)[number] }) {
+  return <article className="contact-card"><div className="contact-title"><div><h3>{item.nameZh}</h3><p>{item.nameEn}</p></div><span>PDF {item.sourcePage}</span></div>{item.person && <strong className="person">{item.person}</strong>}{item.responsibility && <p>{item.responsibility}</p>}<dl>{item.location && <><dt><MapPin size={15} /> 地点</dt><dd>{item.location}</dd></>}{item.hours && <><dt>时间</dt><dd>{item.hours}</dd></>}{item.phone && <><dt><Phone size={15} /> 电话</dt><dd><a href={phoneHref(item.phone)}>{item.phone}</a></dd></>}{item.email && <><dt><Mail size={15} /> 邮箱</dt><dd><a href={`mailto:${item.email}`}>{item.email}</a></dd></>}{item.website && <><dt><ExternalLink size={15} /> 网站</dt><dd><a href={item.website} target="_blank" rel="noopener noreferrer">打开网站</a></dd></>}</dl></article>;
+}
+
+export function ContactsView() { return <div className="contacts-view"><section id="programme"><div className="subsection-heading"><span>A</span><div><h2>CELE Summer Programme Office</h2><p>课程团队与项目支持</p></div></div><div className="contact-grid">{contacts.filter((item) => item.group === "programme").map((item) => <ContactCard item={item} key={`${item.nameEn}-${item.person}`} />)}</div></section><section id="departments"><div className="subsection-heading"><span>B</span><div><h2>Relevant Departments</h2><p>相关部门</p></div></div><div className="contact-grid">{contacts.filter((item) => item.group === "department").map((item) => <ContactCard item={item} key={item.nameEn} />)}</div></section></div>; }

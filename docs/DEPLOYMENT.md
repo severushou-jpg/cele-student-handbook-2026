@@ -1,19 +1,17 @@
-# 推荐部署结构
+# 部署说明
 
-## 推荐方案
+## Vercel
 
-- GitHub：保存代码、版本记录、协作与 Codex 工作区
-- Vercel：部署 Next.js 前后端并获得可访问网址
-- Supabase：公告数据库、管理员登录和附件存储
+1. 将仓库推送至 GitHub，生产分支使用 `main`。
+2. 在 Vercel 导入仓库，Framework Preset 选择 Next.js，构建命令保持 `pnpm build`。
+3. 如需启用公告后台，在 Vercel 配置 `NEXT_PUBLIC_SUPABASE_URL`、`NEXT_PUBLIC_SUPABASE_ANON_KEY`、`NEXT_PUBLIC_SITE_URL`。
+4. 部署后检查首页、七个模块、`/search` 与手机端菜单。公开手册无需登录。
+5. 若启用独立公告后台，再检查 `/admin/login`；该地址不在公开导航中。
 
-## 为什么不只用 GitHub Pages
+## 发布前清单
 
-GitHub Pages 适合纯静态 HTML/CSS/JavaScript。学生手册正文可以静态托管，但“管理员登录 + 公告增删改查 + 定时发布”需要数据库和安全的服务端能力，因此推荐 Vercel + Supabase。
-
-## 预期网址
-
-- GitHub 仓库：`https://github.com/severushou-jpg/cele-student-handbook-2026`
-- Vercel 网站：部署时由 Vercel 分配，例如 `https://cele-student-handbook-2026.vercel.app`
-- 管理后台：`https://你的域名/admin`
-
-实际网址以创建和部署时系统生成的结果为准。
+- 执行 `pnpm lint && pnpm typecheck && pnpm test && pnpm build`。
+- 删除 Supabase 中标题含 `DEMO` 的公告。
+- 完成 `docs/content-audit.md` 的人工确认项。
+- 将 `NEXT_PUBLIC_SITE_URL` 改为正式域名。
+- 确认 Supabase RLS 已开启，不要在 Vercel 中添加 service role key。
