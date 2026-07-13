@@ -2,6 +2,12 @@
 
 面向 2026 CELE 8-Week Pre-Sessional Course 学生的开放式中文在线手册。前台无需注册或登录，内容根据 41 页 `Pre-sessional Student Handbook 2026 (v10).pdf` 重构，包含七个固定模块、八周课程表、全文搜索、紧急联系与可放大地图。
 
+## 公开访问
+
+学生可直接访问：[https://cele-student-handbook-2026.vercel.app](https://cele-student-handbook-2026.vercel.app/)
+
+该网站公开开放，无需注册或登录。
+
 ## 技术栈
 
 - Next.js 16 App Router、React 19、TypeScript strict、Tailwind CSS 4
