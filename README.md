@@ -4,9 +4,16 @@
 
 ## 公开访问
 
-学生可直接访问：[https://cele-student-handbook-2026.vercel.app](https://cele-student-handbook-2026.vercel.app/)
+学生可直接访问：[https://cele-student-handbook-2026-fv4camzcs-severus-hou.vercel.app/](https://cele-student-handbook-2026-fv4camzcs-severus-hou.vercel.app/)
 
 该网站公开开放，无需注册或登录。
+
+## 当前部署状态
+
+- Vercel 生产网站已部署并可公开访问。
+- Supabase 公告数据库、管理员账号与 RLS 权限已经配置。
+- 管理员登录和公告维护后台已正常启用，入口为 [管理员登录](https://cele-student-handbook-2026-fv4camzcs-severus-hou.vercel.app/admin/login)。
+- 学生端保持完全开放，管理员验证仅用于独立公告后台。
 
 ## 技术栈
 
@@ -36,7 +43,7 @@ insert into public.admin_profiles (user_id, role)
 values ('AUTH_USER_UUID', 'admin');
 ```
 
-4. 将 Project URL 与 anon key 写入 `.env.local`。不要将 service role key 放入浏览器或 Git。
+4. 将 Project URL 与 Publishable Key 写入 `.env.local`。不要将 secret 或 service role key 放入浏览器或 Git。
 5. 独立维护入口为 `/admin/login`；公开网站不显示该入口。
 
 ## 质量检查
@@ -50,7 +57,7 @@ pnpm build
 
 ## 部署
 
-参见 `docs/deployment.md`。生产发布前必须删除 DEMO 公告、复核 `docs/content-audit.md` 中的待确认项，并确认从 PDF 提取的校园地图、图片和品牌元素可以公开使用。
+参见 [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md)。生产发布前必须删除 DEMO 公告、复核 `docs/content-audit.md` 中的待确认项，并确认从 PDF 提取的校园地图、图片和品牌元素可以公开使用。
 
 ## 内容与版权
 
