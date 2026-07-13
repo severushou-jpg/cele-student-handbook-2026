@@ -4,7 +4,7 @@
 
 ## 日常操作
 
-1. 访问 [线上管理员登录页](https://cele-student-handbook-2026-fv4camzcs-severus-hou.vercel.app/admin/login)，使用已加入 `admin_profiles` 白名单的维护账号登录。
+1. 访问 [线上管理员登录页](https://cele-student-handbook-2026.vercel.app/admin/login)，使用已加入 `admin_profiles` 白名单的维护账号登录。
 2. 在列表中按状态筛选或搜索，点击“新建公告”创建。
 3. 填写标题、摘要、正文、级别、发布时间和失效时间；需要时添加外链或附件 URL。
 4. 先查看右侧前台预览。`draft` 不会显示，`published` 在发布时间到达后显示，过期后自动从首页隐藏，`archived` 仅后台可见。

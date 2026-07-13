@@ -4,7 +4,7 @@
 
 ## 公开访问
 
-学生可直接访问：[https://cele-student-handbook-2026-fv4camzcs-severus-hou.vercel.app/](https://cele-student-handbook-2026-fv4camzcs-severus-hou.vercel.app/)
+学生可直接访问：[https://cele-student-handbook-2026.vercel.app/](https://cele-student-handbook-2026.vercel.app/)
 
 该网站公开开放，无需注册或登录。
 
@@ -12,7 +12,7 @@
 
 - Vercel 生产网站已部署并可公开访问。
 - Supabase 公告数据库、管理员账号与 RLS 权限已经配置。
-- 管理员登录和公告维护后台已正常启用，入口为 [管理员登录](https://cele-student-handbook-2026-fv4camzcs-severus-hou.vercel.app/admin/login)。
+- 管理员登录和公告维护后台已正常启用，入口为 [管理员登录](https://cele-student-handbook-2026.vercel.app/admin/login)。
 - 学生端保持完全开放，管理员验证仅用于独立公告后台。
 
 ## 技术栈
