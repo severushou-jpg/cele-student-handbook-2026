@@ -8,7 +8,7 @@
 |---|---|---:|---:|---|
 | 1 | 欢迎函 / Welcome Letter | 3 | 1 | `/handbook/welcome-letter` |
 | 2 | 课程安排 / Provisional Timetable | 4–11 | 2–9 | `/handbook/provisional-timetable` |
-| 3 | 报到日安排 / Registration Day | 12–14 | 10–12 | `/handbook/registration-day` |
+| 3 | 开学典礼 / Opening Ceremony | 12–14 | 10–12 | `/handbook/registration-day` |
 | 4 | 课程重要信息 / Course Important Information | 15–16 | 13–14 | `/handbook/course-important-information` |
 | 5 | 联系人及相关部门 / Contacts & Relevant Departments | 17–19 | 15–17 | `/handbook/contacts` |
 | 6 | 《访客安全须知》 / UNNC Safety Rules for Visitors | 20 | 18 | `/handbook/safety-rules` |

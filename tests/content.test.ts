@@ -7,7 +7,7 @@ import { isAdminRole } from "@/lib/admin";
 
 describe("handbook content invariants", () => {
   it("keeps exactly seven modules in the required order", () => {
-    expect(handbookModules.map((item) => item.titleZh)).toEqual(["欢迎函", "课程安排", "报到日安排", "课程重要信息", "联系人及相关部门", "《访客安全须知》", "附录－校园生活手册"]);
+    expect(handbookModules.map((item) => item.titleZh)).toEqual(["欢迎函", "课程安排", "开学典礼", "课程重要信息", "联系人及相关部门", "《访客安全须知》", "附录－校园生活手册"]);
   });
   it("contains all verified timetable milestones", () => {
     const text = timetable.flatMap((week) => week.days).flatMap((day) => day.events.map((event) => `${day.date} ${event.title}`)).join("\n");

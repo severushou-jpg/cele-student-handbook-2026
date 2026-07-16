@@ -81,8 +81,8 @@ export const handbookModules: HandbookModule[] = [
   {
     moduleId: 3,
     slug: "registration-day",
-    titleZh: "报到日安排",
-    titleEn: "Registration Day",
+    titleZh: "开学典礼",
+    titleEn: "Opening Ceremony",
     description: "准备清单、地点与当日日程",
     sourcePage: "12–14（手册页 10–12）",
     lastVerifiedAt: "2026-07-13",

@@ -23,7 +23,7 @@
 
 1. **欢迎函 / Welcome Letter**
 2. **课程安排 / Provisional Timetable**
-3. **报到日安排 / Registration Day**
+3. **开学典礼 / Opening Ceremony**
 4. **课程重要信息 / Course Important Information**
 5. **联系人及相关部门 / Contacts & Relevant Departments**
 6. **《访客安全须知》 / UNNC Safety Rules for Visitors**
@@ -66,7 +66,7 @@
   - 10 September：Final Exam Results Publish & Departure
 - 所有时间、日期和活动名称必须逐项与 PDF 核对。
 
-### 模块 3：报到日安排
+### 模块 3：开学典礼
 
 结构化展示：
 
