@@ -18,7 +18,7 @@ export default async function Home() {
         <div className="shell hero-grid">
           <div className="hero-copy">
             <span className="kicker">2026 · EIGHT WEEK PROGRAMME</span>
-            <h1>CELE <span>Pre-sessional</span><br />information hub</h1>
+            <h1>CELE <span>Pre-Sessional</span><br />Information Hub</h1>
             <p className="hero-zh">2026 CELE 八周学术英语课程<br />在线学生手册</p>
             <div className="course-dates"><CalendarDays size={20} /><div><small>COURSE PERIOD</small><strong>20 JUL — 11 SEP 2026</strong></div></div>
             <div className="quick-links"><Link href="/handbook/provisional-timetable">查看课程安排 <ArrowRight size={17} /></Link><Link href="/handbook/registration-day">查看报到日 <ArrowRight size={17} /></Link><a href="#emergency">紧急联系方式 <PhoneCall size={17} /></a></div>
